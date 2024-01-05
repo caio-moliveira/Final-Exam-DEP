@@ -10,12 +10,12 @@ Final Exam
 
 
 
-Subject: Data Exploration & Preparation
+### Subject: Data Exploration & Preparation
 
 
 
 
-Lecturer:  Dr. Muhammad Iqbal
+### Lecturer:  Dr. Muhammad Iqbal
 
 
 
@@ -79,17 +79,17 @@ Question 2	7
 Reference	11
 
  
-Question 1
+## Question 1
 
-a) Refer to the income attribute of the 10 customers in Table 2.1, before pre-processing.
-i) Find the mean income before pre-processing. 
+#### a) Refer to the income attribute of the 10 customers in Table 2.1, before pre-processing.
+#### i) Find the mean income before pre-processing. 
 The mean income before pre-processing is approximately $1,082,349.8.
  ![image](https://github.com/caio-moliveira/Final-Exam-DEP/assets/150807759/b37c65e4-9482-41f9-9629-072b0374b541)
 
-ii) What does this number actually mean? 
+#### ii) What does this number actually mean? 
 This number represents the average income of all the customers listed in Table 2.1 before any data cleaning or processing is done. It's the sum of all income values divided by the number of income entries. This figure provides a central tendency of the income data but may be heavily influenced by outliers or incorrect data entries, as it seems quite high for an individual income.
 
-iii) Now, calculate the mean income for the three values left after pre-processing. Does this value have a meaning? 
+#### iii) Now, calculate the mean income for the three values left after pre-processing. Does this value have a meaning? 
 Pre-processing involves cleaning and preparing any type of data for analysis and it might differ from case to case what to consider depending on the data provided. 
 I have done an exploratory analysis removing all rows containing outliers such high and low incomes (including negative), missing values. 
 Is important to highlight that in some cases, the values can be filled with means, medians and modes. 
@@ -107,11 +107,11 @@ Follow the result after pre-processing.
  ![image](https://github.com/caio-moliveira/Final-Exam-DEP/assets/150807759/cf03210d-5884-406e-ac22-18c3aead857a)
 
 
-Explain why post codes should be considered text variables rather than numeric. 
+#### Explain why post codes should be considered text variables rather than numeric. 
 
 Post codes vary significantly by country, with some including both letters and numbers, such as in the UK, Canada, and Ireland, while others use only numbers, like Brazil. For instance, in Ireland, post codes like D01, D02, and D03 contain both letters and numbers, with each code representing a specific geographical area. In Brazil, although post codes consist exclusively of numbers, the sequence and arrangement of these numbers are crucial, as they indicate specific regions. This diversity underscores the importance of treating post codes as text variables in data processing to preserve their meaning and structure fully.
 
-Identify which columns are suitable for the categorical data types in the Table 2.1 and provide the appropriate encoding scheme to replace the variables with numeric data. 
+#### Identify which columns are suitable for the categorical data types in the Table 2.1 and provide the appropriate encoding scheme to replace the variables with numeric data. 
 
 Gender: Since genders are different categories, this column is usually categorical.
 Marital Status: The various marital statuses shown in this column are also categorized.
@@ -122,17 +122,19 @@ In order to assign an unique integer to the categorical column we can use “Lab
  
 After applying the model to the dataset, you should be able to see that the model takes in consideration the missing values in the Gender column, assigning 1 to these missing values. This might cause skewing on the analysis and make more important the exploratory analysis before applying any model.
 
-Explain why a birth date variable would be preferred to an age variable in a database based on the presence of data attribute in Table 2.1. 
+#### Explain why a birth date variable would be preferred to an age variable in a database based on the presence of data attribute in Table 2.1. 
 
 Knowing the birth date provides a more precise and accurate calculation of age over time. Let's assume the data was collected two years ago. If the variable contains the exact age at that time, you would need to apply a specific method to update the age for the entire column. However, with the birth date, you can calculate the current age directly, ensuring accuracy and eliminating the need for periodic updates to the age data. This approach simplifies data maintenance and enhances the reliability of age-related information in the database.
 
-Explain why it is not recommended, as a strategy for dealing with missing data, to simply omit the records or fields with missing values from the analysis. Briefly explain your answer.
+#### Explain why it is not recommended, as a strategy for dealing with missing data, to simply omit the records or fields with missing values from the analysis. Briefly explain your answer.
 
 Dealing with missing data can be very challenging. It is crucial to understand the dataset you are working on to appropriately clean and preprocess the data. As mentioned earlier, each dataset is unique and requires careful consideration when deciding on imputation strategies, such as using the mean, median, or mode. Similarly, applying models to categorical data requires equal attention, as seen in previous discussions. Omitting data can lead to skewed results and incorrect analyses. In practical scenarios, such inaccuracies can result in substantial financial costs and consume significant time to rectify. Therefore, understanding the company culture, the timing of data collection, the individuals responsible for collecting the data, and the context of the data are all essential factors in making informed decisions about handling missing data. This comprehensive understanding helps ensure accurate and reliable data analysis.
-Question 2
 
 
-Explain the purpose and need for data exploration and preparation within data analytics projects. Use illustrations to justify your answer
+## Question 2
+
+
+#### Explain the purpose and need for data exploration and preparation within data analytics projects. Use illustrations to justify your answer
 
 Understanding the relationships, content, and structure of the data is necessary for data exploration. It involves finding anomalies, analysing statistics, and displaying patterns or trends (Wickham & Grolemund, 2017). Histograms and scatter plots, for example, might show distribution patterns or correlations between variables, which can direct more investigation (Heiberger & Neuwirth, 2009).
 
@@ -141,12 +143,12 @@ Cleaning and modifying data to make it more suitable for analysis is part of the
 In every data analytics project, these two processes are essential because they provide the framework for all further analysis and decision-making.
 
 
-Choose a relevant encoding technique to transform the categorical data to numeric format. 
+#### Choose a relevant encoding technique to transform the categorical data to numeric format. 
 
 ![image](https://github.com/caio-moliveira/Final-Exam-DEP/assets/150807759/8db050b1-2db0-41d1-b94a-84dcc995cc58)
  
 
-Formulate the questions for EDA (Exploratory Data Analysis) and perform EDA based on the data provided and address the issues to understand the impact of rain, temperature, snow and other factors on the traffic volume.
+#### Formulate the questions for EDA (Exploratory Data Analysis) and perform EDA based on the data provided and address the issues to understand the impact of rain, temperature, snow and other factors on the traffic volume.
 
 The traffic volume peaks twice a day, usually during the morning and evening rush hours. Around 7-8 AM is when the first peak happens, and around 4-5 PM is when the bigger second peak occurs. This pattern represents typical workday commutes, since many people leave for work in the morning and go home in the evening.
 Early in the morning is when traffic is at its lowest, and as the day goes on, it gradually increases.
@@ -162,7 +164,7 @@ Certain weather conditions, such as "clouds" and "haze," show a close clustering
 
  
 
-Analyse the benefits and drawbacks for feature selection and extraction techniques. Which features are important from the provided dataset? (Feature Selection Method)
+#### Analyse the benefits and drawbacks for feature selection and extraction techniques. Which features are important from the provided dataset? (Feature Selection Method)
 
 In order to decrease dimensionality, enhance model performance, and guarantee quicker and more effective computing, feature selection and extraction are crucial. Among the feature selection techniques are the filter, wrapper, and embedding techniques. Filter approaches use statistical tests to analyze characteristics (Guyon & Elisseeff, 2003), While embedded techniques incorporate feature selection into the model training process, wrapper approaches utilize particular machine learning models to determine the significance of features. (Kuhn & Johnson, 2013). 
 Feature selection may be time-consuming, especially for wrapper approaches, and can result in information loss even while it reduces overfitting and improves the interpretability of the model. The data is transformed into a lower-dimensional space via feature extraction techniques like PCA, which can aid in noise reduction and visualization but may provide less interpretable features (James, Witten, Hastie, & Tibshirani, 2013). 
@@ -171,7 +173,7 @@ You may think about utilizing Lasso regression for linear correlations or featur
 
 
 
-Prepare the data for the machine learning model after encoding and feature selection, predict traffic volume using the machine learning model for regression.
+#### Prepare the data for the machine learning model after encoding and feature selection, predict traffic volume using the machine learning model for regression.
 
 
 RMSE (Root Mean Squared Error) - 1.945817e+03
