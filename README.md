@@ -84,7 +84,8 @@ Question 1
 a) Refer to the income attribute of the 10 customers in Table 2.1, before pre-processing.
 i) Find the mean income before pre-processing. 
 The mean income before pre-processing is approximately $1,082,349.8.
- 
+ ![image](https://github.com/caio-moliveira/Final-Exam-DEP/assets/150807759/b37c65e4-9482-41f9-9629-072b0374b541)
+
 ii) What does this number actually mean? 
 This number represents the average income of all the customers listed in Table 2.1 before any data cleaning or processing is done. It's the sum of all income values divided by the number of income entries. This figure provides a central tendency of the income data but may be heavily influenced by outliers or incorrect data entries, as it seems quite high for an individual income.
 
@@ -94,14 +95,17 @@ I have done an exploratory analysis removing all rows containing outliers such h
 Is important to highlight that in some cases, the values can be filled with means, medians and modes. 
 
 Follow the analyse below:
- 
+ ![image](https://github.com/caio-moliveira/Final-Exam-DEP/assets/150807759/e29bd28e-62ff-4460-9770-8349a9e6e184)
+![image](https://github.com/caio-moliveira/Final-Exam-DEP/assets/150807759/4746c447-7b40-4dfc-8927-c4bc86166748)
+
  
 Although the result makes sense, the data has been reduced considerable which might not provide a clear analysis of the problem. 
 Following up with the question which asks to calculate the mean of the “three values left after pre-processing”. The only value I could consider for this analysis as there was no specific criteria, is stored in the Customer ID C0002, replacing any negative value with their positive counterparts.
  
 
 Follow the result after pre-processing. 
- 
+ ![image](https://github.com/caio-moliveira/Final-Exam-DEP/assets/150807759/cf03210d-5884-406e-ac22-18c3aead857a)
+
 
 Explain why post codes should be considered text variables rather than numeric. 
 
@@ -112,6 +116,9 @@ Identify which columns are suitable for the categorical data types in the Table 
 Gender: Since genders are different categories, this column is usually categorical.
 Marital Status: The various marital statuses shown in this column are also categorized.
 In order to assign an unique integer to the categorical column we can use “Label Encoding” or “One-Hote Encoding”. I have chosen Label Encoding and this is the following result:
+
+![image](https://github.com/caio-moliveira/Final-Exam-DEP/assets/150807759/403cb653-839c-41c8-b943-de0e744a91c1)
+
  
 After applying the model to the dataset, you should be able to see that the model takes in consideration the missing values in the Gender column, assigning 1 to these missing values. This might cause skewing on the analysis and make more important the exploratory analysis before applying any model.
 
@@ -135,6 +142,8 @@ In every data analytics project, these two processes are essential because they 
 
 
 Choose a relevant encoding technique to transform the categorical data to numeric format. 
+
+![image](https://github.com/caio-moliveira/Final-Exam-DEP/assets/150807759/8db050b1-2db0-41d1-b94a-84dcc995cc58)
  
 
 Formulate the questions for EDA (Exploratory Data Analysis) and perform EDA based on the data provided and address the issues to understand the impact of rain, temperature, snow and other factors on the traffic volume.
@@ -144,10 +153,12 @@ Early in the morning is when traffic is at its lowest, and as the day goes on, i
 There is an evident shift in the traffic pattern. When it comes to traffic, the morning spike starts later and doesn't significantly vary in volume until lunchtime.
 Compared to weekdays, there is a less noticeable peak in the afternoon, suggesting a more evenly distributed distribution of travel throughout the day, perhaps as a result of different leisure and non-work-related activities.
 
- 
+![Rplot](https://github.com/caio-moliveira/Final-Exam-DEP/assets/150807759/ace017a1-afdb-4c89-adef-3d5cc6f0d84d)
 
 
 Certain weather conditions, such as "clouds" and "haze," show a close clustering of traffic volumes, suggesting that traffic behaviour is comparatively stable in these conditions. Rain and snow, on the other hand, exhibit more fluctuation, suggesting that travel volume is more inconsistent during these weather conditions as you can see below:
+
+![Boxplot](https://github.com/caio-moliveira/Final-Exam-DEP/assets/150807759/93609cb7-4b42-40b7-9457-f4fb2056a363)
 
  
 
