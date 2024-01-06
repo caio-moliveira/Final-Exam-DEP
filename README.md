@@ -185,7 +185,9 @@ You may think about utilizing Lasso regression for linear correlations or featur
 
 
 RMSE (Root Mean Squared Error) - 1.945817e+03
+
 MAE (Mean Absolute Error) - 1.695819e+03
+
 R-squared - 5.246665e-02   
 
 
