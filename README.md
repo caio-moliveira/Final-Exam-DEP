@@ -128,7 +128,9 @@ Knowing the birth date provides a more precise and accurate calculation of age o
 
 #### Explain why it is not recommended, as a strategy for dealing with missing data, to simply omit the records or fields with missing values from the analysis. Briefly explain your answer.
 
-Dealing with missing data can be very challenging. It is crucial to understand the dataset you are working on to appropriately clean and preprocess the data. As mentioned earlier, each dataset is unique and requires careful consideration when deciding on imputation strategies, such as using the mean, median, or mode. Similarly, applying models to categorical data requires equal attention, as seen in previous discussions. Omitting data can lead to skewed results and incorrect analyses. In practical scenarios, such inaccuracies can result in substantial financial costs and consume significant time to rectify. Therefore, understanding the company culture, the timing of data collection, the individuals responsible for collecting the data, and the context of the data are all essential factors in making informed decisions about handling missing data. This comprehensive understanding helps ensure accurate and reliable data analysis.
+Dealing with missing data can be very challenging. It is crucial to understand the dataset you are working on to appropriately clean and preprocess the data. As mentioned earlier, each dataset is unique and requires careful consideration when deciding on imputation strategies, such as using the mean, median, or mode. Similarly, applying models to categorical data requires equal attention, as seen in previous discussions. Omitting data can lead to skewed results and incorrect analyses. 
+
+In practical scenarios, such inaccuracies can result in substantial financial costs and consume significant time to rectify. Therefore, understanding the company culture, the timing of data collection, the individuals responsible for collecting the data, and the context of the data are all essential factors in making informed decisions about handling missing data. This comprehensive understanding helps ensure accurate and reliable data analysis.
 
 
 ## Question 2
@@ -150,15 +152,20 @@ In every data analytics project, these two processes are essential because they 
 
 #### Formulate the questions for EDA (Exploratory Data Analysis) and perform EDA based on the data provided and address the issues to understand the impact of rain, temperature, snow and other factors on the traffic volume.
 
-The traffic volume peaks twice a day, usually during the morning and evening rush hours. Around 7-8 AM is when the first peak happens, and around 4-5 PM is when the bigger second peak occurs. This pattern represents typical workday commutes, since many people leave for work in the morning and go home in the evening.
+The traffic volume peaks twice a day, usually during the morning and evening rush hours. Around 7-8 AM is when the first peak happens, and around 4-5 PM is when the bigger second peak occurs. This pattern represents typical workday commutes since many people leave for work in the morning and go home in the evening.
+
 Early in the morning is when traffic is at its lowest, and as the day goes on, it gradually increases.
+
 There is an evident shift in the traffic pattern. When it comes to traffic, the morning spike starts later and doesn't significantly vary in volume until lunchtime.
+
 Compared to weekdays, there is a less noticeable peak in the afternoon, suggesting a more evenly distributed distribution of travel throughout the day, perhaps as a result of different leisure and non-work-related activities.
+
 
 ![Rplot](https://github.com/caio-moliveira/Final-Exam-DEP/assets/150807759/ace017a1-afdb-4c89-adef-3d5cc6f0d84d)
 
 
 Certain weather conditions, such as "clouds" and "haze," show a close clustering of traffic volumes, suggesting that traffic behaviour is comparatively stable in these conditions. Rain and snow, on the other hand, exhibit more fluctuation, suggesting that travel volume is more inconsistent during these weather conditions as you can see below:
+
 
 ![Boxplot](https://github.com/caio-moliveira/Final-Exam-DEP/assets/150807759/93609cb7-4b42-40b7-9457-f4fb2056a363)
 
@@ -167,9 +174,10 @@ Certain weather conditions, such as "clouds" and "haze," show a close clustering
 #### Analyse the benefits and drawbacks for feature selection and extraction techniques. Which features are important from the provided dataset? (Feature Selection Method)
 
 In order to decrease dimensionality, enhance model performance, and guarantee quicker and more effective computing, feature selection and extraction are crucial. Among the feature selection techniques are the filter, wrapper, and embedding techniques. Filter approaches use statistical tests to analyze characteristics (Guyon & Elisseeff, 2003), While embedded techniques incorporate feature selection into the model training process, wrapper approaches utilize particular machine learning models to determine the significance of features. (Kuhn & Johnson, 2013). 
-Feature selection may be time-consuming, especially for wrapper approaches, and can result in information loss even while it reduces overfitting and improves the interpretability of the model. The data is transformed into a lower-dimensional space via feature extraction techniques like PCA, which can aid in noise reduction and visualization but may provide less interpretable features (James, Witten, Hastie, & Tibshirani, 2013). 
-You may think about utilizing Lasso regression for linear correlations or feature importance from tree-based models for a practical application on the given dataset taking traffic volume into account. These techniques can aid in determining the elements of time, weather, and other accessible factors that have the greatest impact on traffic volumes.
 
+Feature selection may be time-consuming, especially for wrapper approaches, and can result in information loss even while it reduces overfitting and improves the interpretability of the model. The data is transformed into a lower-dimensional space via feature extraction techniques like PCA, which can aid in noise reduction and visualization but may provide less interpretable features (James, Witten, Hastie, & Tibshirani, 2013). 
+
+You may think about utilizing Lasso regression for linear correlations or feature importance from tree-based models for a practical application on the given dataset taking traffic volume into account. These techniques can aid in determining the elements of time, weather, and other accessible factors that have the greatest impact on traffic volumes.
 
 
 
@@ -178,7 +186,7 @@ You may think about utilizing Lasso regression for linear correlations or featur
 
 RMSE (Root Mean Squared Error) - 1.945817e+03
 MAE (Mean Absolute Error) - 1.695819e+03
-Rsquared - 5.246665e-02   
+R-squared - 5.246665e-02   
 
 
 RMSE measures the average magnitude of the error between the predicted traffic volume and the actual traffic volume.
