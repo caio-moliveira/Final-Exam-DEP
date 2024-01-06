@@ -182,11 +182,17 @@ Rsquared - 5.246665e-02
 
 
 RMSE measures the average magnitude of the error between the predicted traffic volume and the actual traffic volume.
+
 It's expressed in the same units as the traffic volume itself (in this case, likely vehicles or similar units).
+
 A lower RMSE indicates a better fit. Here, the RMSE is approximately 1945.817, meaning that, on average, the model's predictions are about 1945.817 units away from the actual traffic volumes.
+
 MAE measures the average magnitude of the errors in a set of predictions, without considering their direction (i.e., it treats underpredictions and overpredictions equally).
+
 RMSE (1945.817) and MAE (1695.819) are quite large, suggesting that the model may have significant prediction errors on average. This could mean the model isn't capturing all the necessary factors influencing traffic volume, or the problem is inherently difficult to predict with the available data.
+
 The R-squared (5.2%) is low, indicating that the model explains only a small fraction of the variance in traffic volume. This further suggests that the model might need additional relevant features, more sophisticated feature engineering, or a different modelling approach to better capture the patterns in traffic volume.
+
 These numbers don't predict the traffic volume themselves; rather, they evaluate how well the model's predictions match the actual observed traffic volumes. They provide insight into the accuracy and reliability of the model's predictions, helping you understand the model's performance and where it might need improvement.
 
 
