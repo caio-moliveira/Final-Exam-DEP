@@ -1,5 +1,4 @@
 # Final-Exam-DEP
-Final Exam 
  
 
 
@@ -73,10 +72,6 @@ By submitting this assessment, I confirm that I have read the CCT policy on Acad
 
 
 
-Contents
-Question 1	4
-Question 2	7
-Reference	11
 
  
 ## Question 1
